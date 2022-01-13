@@ -48,4 +48,8 @@ ReadMe - ongoning
 - Each member has a branch
 
 
+## Machine Learning Model
+
+We need to pull data directly, e.g. using SQL Alchemy
+
 
