@@ -14,9 +14,9 @@ To provide useful information to potential visitors what can be seen at a select
 
 ### Description of our data source
 
-Specie found in various parks
+Species found in various parks
 
-![Specie and park info]https://www.kaggle.com/nationalparkservice/park-biodiversity?select=species.csv)
+![Species and park info]https://www.kaggle.com/nationalparkservice/park-biodiversity?select=species.csv)
 
 
 
