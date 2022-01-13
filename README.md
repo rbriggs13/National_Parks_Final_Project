@@ -40,3 +40,12 @@ ReadMe - ongoning
 - Text messaging for live communication
 - Slack group for sharing links, ideas, etc.
 - Zoom calling, if the need arise
+
+### GitHib branches
+
+- Main: https://github.com/rbriggs13/National_Parks_Final_Project
+
+- Each member has a branch
+
+
+
