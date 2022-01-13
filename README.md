@@ -28,3 +28,15 @@ Species found in various parks
 - Is there a relation between biodiversity and park visitors
 - What species tend to attract the most visitors?
 - Is there a relation between the size of parks and No. of visitors?
+
+## GitHub
+
+ReadMe - ongoning
+
+### Description of communication Protocols
+
+- We will check in daily at around 7pm, except on days of classes via text messaging.
+
+- Text messaging for live communication
+- Slack group for sharing links, ideas, etc.
+- Zoom calling, if the need arise
