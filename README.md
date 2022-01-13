@@ -25,6 +25,6 @@ Species found in various parks
 
 ### Questions we hope to answer
 
-Is there a relation between biodiversity and park visitors
-What species tend to attract the most visitors?
-Is there a relation between the size of parks and No. of visitors?
+- Is there a relation between biodiversity and park visitors
+- What species tend to attract the most visitors?
+- Is there a relation between the size of parks and No. of visitors?
