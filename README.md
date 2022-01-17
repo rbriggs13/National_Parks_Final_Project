@@ -8,7 +8,7 @@
 
 We have decided on this topic because we want to p
 
-### Reason for selected topic because we want to provide useful information to potential visitors what can be seen at a selected park, based on their interest. In addition, we want to highlight Nativeness and non-Nativeness of both flora and fauna at these parks.
+We selected this topic because we want to provide useful information to potential visitors what can be seen at a selected park, based on their interest. In addition, we want to highlight Nativeness and non-Nativeness of both flora and fauna at these parks.
  
 Our data was sources from Kaggle and the National Parks government websites:
 
