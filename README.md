@@ -10,7 +10,7 @@ We have decided on this topic because we want to p
 
 We selected this topic because we want to provide useful information to potential visitors what can be seen at a selected park, based on their interest. In addition, we want to highlight Nativeness and non-Nativeness of both flora and fauna at these parks.
  
-Our data was sources from Kaggle and the National Parks government websites:
+Our data was sourced from Kaggle and the National Parks government websites:
 
 
 Species found in various parks
