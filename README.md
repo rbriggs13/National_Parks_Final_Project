@@ -68,17 +68,8 @@ Cons:
 - It is not beleficial for linear methods with a lot of sparse features.
 
 ----------------------------
-CREATE TABLE nationalparks (
-	park_code VARCHAR(100),
-	park_name VARCHAR(100),
-	states VARCHAR(100),
-	acres DECIMAL,
-	latitude DECIMAL,
-	longitude DECIMAL,
-	ranks INT,
-	visitors VARCHAR(100),
-	percentage VARCHAR(100)
-)
+CREATE TABLE nationalparks ( park_code VARCHAR(100), park_name VARCHAR(100), states VARCHAR(100), acres DECIMAL, latitude DECIMAL, longitude DECIMAL, ranks INT, visitors INT, percentage DECIMAL)
+
 
 DROP TABLE nationalparks
 
