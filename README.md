@@ -2,7 +2,7 @@
 
 Group Members:
 ![Harry Mohabir]https://github.com/hmohabir)
-![Lydia Ramirez ]https://github.com/hmohabir)
+![Lydia Ramirez ]https://github.com/LydiaRamirez1)
 ![Ryan Briggs]https://github.com/rbriggs13)
 
 ## Presentation
