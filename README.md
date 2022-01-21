@@ -1,12 +1,17 @@
 # National_Parks_Final_Project
 
+Group Members:
+![Harry Mohabir]https://github.com/hmohabir)
+![Lydia Ramirez ]https://github.com/hmohabir)
+![Ryan Briggs]https://github.com/hmohabir)
+
 ## Presentation
 
-(Presentation Slides will be attached here)
+(https://docs.google.com/presentation/d/1OvQoqeVeVCoBJMrIVUxwvsc1T2G-Y4KHwDu30AmQtIk/edit?usp=sharing)
 
 ## Biodiversities in National Park
 
-We have decided on this topic because we want to p
+
 
 We selected this topic because we want to provide useful information to potential visitors what can be seen at a selected park, based on their interest. In addition, we want to highlight Nativeness and non-Nativeness of both flora and fauna at these parks.
  
@@ -66,7 +71,6 @@ Cons:
 - May be biased while dealing with categorical variables.
 - Can be slow to train.
 - It is not beleficial for linear methods with a lot of sparse features.
-
 ----------------------------
 CREATE TABLE nationalparks ( park_code VARCHAR(100), park_name VARCHAR(100), states VARCHAR(100), acres DECIMAL, latitude DECIMAL, longitude DECIMAL, ranks INT, visitors INT, percentage DECIMAL)
 
