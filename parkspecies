@@ -1,0 +1,3 @@
+CREATE TABLE parkspecies(park_code VARCHAR(100), park_name VARCHAR(100), states VARCHAR(100), acres VARCHAR(100), latitude INT, longitutde INT, ranks INT, visitors INT, percentage INT,
+species_id VARCHAR(100), category VARCHAR(100), orders VARCHAR(100), familys VARCHAR(100), scientific_name VARCHAR(100), common_names VARCHAR(100), occurrence VARCHAR(100), nativeness VARCHAR(100),
+conservation_status VARCHAR(100), park_id VARCHAR(100));
