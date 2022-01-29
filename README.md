@@ -15,29 +15,21 @@ Biodiversities in U.S. National Parks
 
 ## Presentation
 
-<<<<<<< HEAD
-### Selected Topic
-
-Biodiversities in National Park
-=======
 Presentation Google Slides:
 
 (https://docs.google.com/presentation/d/1OvQoqeVeVCoBJMrIVUxwvsc1T2G-Y4KHwDu30AmQtIk/edit?usp=sharing)
 
 
->>>>>>> 8bff66dec8eb7d153bc2ba04fefb06b232d2c75d
-
 ### Reason for selected topic
 
 We want to answer questions like:
 
-<<<<<<< HEAD
 Is there a relation between biodiversity and park visitors
 What species tend to attract the most visitors?
 Is there a relation between the size of parks and visitors?
-=======
+
 ### Data sources
->>>>>>> 8bff66dec8eb7d153bc2ba04fefb06b232d2c75d
+
 
 ### Description of our data source
 
@@ -47,9 +39,7 @@ Is there a relation between the size of parks and visitors?
 ![Percentage visitors]https://irma.nps.gov/STATS/SSRSReports/National%20Reports/Annual%20Park%20Ranking%20Report%20(1979%20-%20Last%20Calendar%20Year)
 
 
-<<<<<<< HEAD
 
-=======
 
 ### Questions we hope to answer
 
@@ -159,4 +149,4 @@ This slideshow contains:
 ## Final Project - Segment 3
 
 
->>>>>>> 8bff66dec8eb7d153bc2ba04fefb06b232d2c75d
+
