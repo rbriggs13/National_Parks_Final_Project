@@ -85,3 +85,7 @@ SELECT * FROM nationalparks
 SELECT * FROM learningspecies
 
 SELECT * FROM cleanspecies
+
+## Dashboard
+ - Javascript, html, and plotly will be used to make the final dashboard
+ - Additional information will be provided when hovering over a data point in various graphs
