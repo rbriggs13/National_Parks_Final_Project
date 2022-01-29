@@ -1,0 +1,552 @@
+{
+    "Acadia": {
+        "Park Code": "ACAD",
+        "State": "ME",
+        "Acres": 47390,
+        "Latitude": 44.35,
+        "Longitude": -68.21,
+        "Rank": 7,
+        "Visitors": 3437286,
+        "Percentage": 0.0378
+    },
+    "Arches": {
+        "Park Code": "ARCH",
+        "State": "UT",
+        "Acres": 76519,
+        "Latitude": 38.68,
+        "Longitude": -109.57,
+        "Rank": 17,
+        "Visitors": 1659702,
+        "Percentage": 0.0182
+    },
+    "Badlands": {
+        "Park Code": "BADL",
+        "State": "SD",
+        "Acres": 242756,
+        "Latitude": 43.75,
+        "Longitude": -102.5,
+        "Rank": 28,
+        "Visitors": 970998,
+        "Percentage": 0.0107
+    },
+    "Big Bend": {
+        "Park Code": "BIBE",
+        "State": "TX",
+        "Acres": 801163,
+        "Latitude": 29.25,
+        "Longitude": -103.25,
+        "Rank": 44,
+        "Visitors": 463832,
+        "Percentage": 0.0051
+    },
+    "Biscayne": {
+        "Park Code": "BISC",
+        "State": "FL",
+        "Acres": 172924,
+        "Latitude": 25.65,
+        "Longitude": -80.08,
+        "Rank": 30,
+        "Visitors": 708522,
+        "Percentage": 0.0078
+    },
+    "Black Canyon of the Gunnison": {
+        "Park Code": "BLCA",
+        "State": "CO",
+        "Acres": 32950,
+        "Latitude": 38.57,
+        "Longitude": -107.72,
+        "Rank": 46,
+        "Visitors": 432818,
+        "Percentage": 0.0048
+    },
+    "Bryce Canyon": {
+        "Park Code": "BRCA",
+        "State": "UT",
+        "Acres": 35835,
+        "Latitude": 37.57,
+        "Longitude": -112.18,
+        "Rank": 12,
+        "Visitors": 2594904,
+        "Percentage": 0.0285
+    },
+    "Canyonlands": {
+        "Park Code": "CANY",
+        "State": "UT",
+        "Acres": 337598,
+        "Latitude": 38.2,
+        "Longitude": -109.93,
+        "Rank": 29,
+        "Visitors": 733996,
+        "Percentage": 0.0081
+    },
+    "Capitol Reef": {
+        "Park Code": "CARE",
+        "State": "UT",
+        "Acres": 241904,
+        "Latitude": 38.2,
+        "Longitude": -111.17,
+        "Rank": 23,
+        "Visitors": 1226519,
+        "Percentage": 0.0135
+    },
+    "Carlsbad Caverns": {
+        "Park Code": "CAVE",
+        "State": "NM",
+        "Acres": 46766,
+        "Latitude": 32.17,
+        "Longitude": -104.44,
+        "Rank": 45,
+        "Visitors": 440691,
+        "Percentage": 0.0048
+    },
+    "Channel Islands": {
+        "Park Code": "CHIS",
+        "State": "CA",
+        "Acres": 249561,
+        "Latitude": 34.01,
+        "Longitude": -119.42,
+        "Rank": 47,
+        "Visitors": 409630,
+        "Percentage": 0.0045
+    },
+    "Congaree": {
+        "Park Code": "CONG",
+        "State": "SC",
+        "Acres": 26546,
+        "Latitude": 33.78,
+        "Longitude": -80.78,
+        "Rank": 52,
+        "Visitors": 159445,
+        "Percentage": 0.0018
+    },
+    "Crater Lake": {
+        "Park Code": "CRLA",
+        "State": "OR",
+        "Acres": 183224,
+        "Latitude": 42.94,
+        "Longitude": -122.1,
+        "Rank": 31,
+        "Visitors": 704512,
+        "Percentage": 0.0077
+    },
+    "Cuyahoga Valley": {
+        "Park Code": "CUVA",
+        "State": "OH",
+        "Acres": 32950,
+        "Latitude": 41.24,
+        "Longitude": -81.55,
+        "Rank": 13,
+        "Visitors": 2237997,
+        "Percentage": 0.0246
+    },
+    "Denali": {
+        "Park Code": "DENA",
+        "State": "AK",
+        "Acres": 3372402,
+        "Latitude": 63.33,
+        "Longitude": -150.5,
+        "Rank": 38,
+        "Visitors": 601152,
+        "Percentage": 0.0066
+    },
+    "Death Valley": {
+        "Park Code": "DEVA",
+        "State": "CA, NV",
+        "Acres": 4740912,
+        "Latitude": 36.24,
+        "Longitude": -116.82,
+        "Rank": 16,
+        "Visitors": 1740945,
+        "Percentage": 0.0191
+    },
+    "Dry Tortugas": {
+        "Park Code": "DRTO",
+        "State": "FL",
+        "Acres": 64701,
+        "Latitude": 24.63,
+        "Longitude": -82.87,
+        "Rank": 56,
+        "Visitors": 79200,
+        "Percentage": 0.0009
+    },
+    "Everglades": {
+        "Park Code": "EVER",
+        "State": "FL",
+        "Acres": 1508538,
+        "Latitude": 25.32,
+        "Longitude": -80.93,
+        "Rank": 25,
+        "Visitors": 1118300,
+        "Percentage": 0.0123
+    },
+    "Gates of the Arctic": {
+        "Park Code": "GAAR",
+        "State": "AK",
+        "Acres": 7523898,
+        "Latitude": 67.78,
+        "Longitude": -153.3,
+        "Rank": 63,
+        "Visitors": 10518,
+        "Percentage": 0.0001
+    },
+    "Glacier": {
+        "Park Code": "GLAC",
+        "State": "MT",
+        "Acres": 1013572,
+        "Latitude": 48.8,
+        "Longitude": -114.0,
+        "Rank": 10,
+        "Visitors": 3049839,
+        "Percentage": 0.0335
+    },
+    "Glacier Bay": {
+        "Park Code": "GLBA",
+        "State": "AK",
+        "Acres": 3224840,
+        "Latitude": 58.5,
+        "Longitude": -137.0,
+        "Rank": 33,
+        "Visitors": 672087,
+        "Percentage": 0.0074
+    },
+    "Great Basin": {
+        "Park Code": "GRBA",
+        "State": "NV",
+        "Acres": 77180,
+        "Latitude": 38.98,
+        "Longitude": -114.3,
+        "Rank": 54,
+        "Visitors": 131802,
+        "Percentage": 0.0014
+    },
+    "Grand Canyon": {
+        "Park Code": "GRCA",
+        "State": "AZ",
+        "Acres": 1217403,
+        "Latitude": 36.06,
+        "Longitude": -112.14,
+        "Rank": 2,
+        "Visitors": 5974411,
+        "Percentage": 0.0656
+    },
+    "Great Sand Dunes": {
+        "Park Code": "GRSA",
+        "State": "CO",
+        "Acres": 42984,
+        "Latitude": 37.73,
+        "Longitude": -105.51,
+        "Rank": 41,
+        "Visitors": 527546,
+        "Percentage": 0.0058
+    },
+    "Great Smoky Mountains": {
+        "Park Code": "GRSM",
+        "State": "TN, NC",
+        "Acres": 521490,
+        "Latitude": 35.68,
+        "Longitude": -83.53,
+        "Rank": 1,
+        "Visitors": 12547743,
+        "Percentage": 0.1379
+    },
+    "Grand Teton": {
+        "Park Code": "GRTE",
+        "State": "WY",
+        "Acres": 309995,
+        "Latitude": 43.73,
+        "Longitude": -110.8,
+        "Rank": 8,
+        "Visitors": 3405614,
+        "Percentage": 0.0374
+    },
+    "Guadalupe Mountains": {
+        "Park Code": "GUMO",
+        "State": "TX",
+        "Acres": 86416,
+        "Latitude": 31.92,
+        "Longitude": -104.87,
+        "Rank": 50,
+        "Visitors": 188833,
+        "Percentage": 0.0021
+    },
+    "Haleakala": {
+        "Park Code": "HALE",
+        "State": "HI",
+        "Acres": 29094,
+        "Latitude": 20.72,
+        "Longitude": -156.17,
+        "Rank": 27,
+        "Visitors": 994394,
+        "Percentage": 0.0109
+    },
+    "Hawaii Volcanoes": {
+        "Park Code": "HAVO",
+        "State": "HI",
+        "Acres": 323431,
+        "Latitude": 19.38,
+        "Longitude": -155.2,
+        "Rank": 21,
+        "Visitors": 1368376,
+        "Percentage": 0.015
+    },
+    "Hot Springs": {
+        "Park Code": "HOSP",
+        "State": "AR",
+        "Acres": 5550,
+        "Latitude": 34.51,
+        "Longitude": -93.05,
+        "Rank": 19,
+        "Visitors": 1467153,
+        "Percentage": 0.0161
+    },
+    "Isle Royale": {
+        "Park Code": "ISRO",
+        "State": "MI",
+        "Acres": 571790,
+        "Latitude": 48.1,
+        "Longitude": -88.55,
+        "Rank": 60,
+        "Visitors": 26410,
+        "Percentage": 0.0003
+    },
+    "Joshua Tree": {
+        "Park Code": "JOTR",
+        "State": "CA",
+        "Acres": 789745,
+        "Latitude": 33.79,
+        "Longitude": -115.9,
+        "Rank": 11,
+        "Visitors": 2988547,
+        "Percentage": 0.0328
+    },
+    "Katmai": {
+        "Park Code": "KATM",
+        "State": "AK",
+        "Acres": 3674530,
+        "Latitude": 58.5,
+        "Longitude": -155.0,
+        "Rank": 55,
+        "Visitors": 84167,
+        "Percentage": 0.0009
+    },
+    "Kenai Fjords": {
+        "Park Code": "KEFJ",
+        "State": "AK",
+        "Acres": 669983,
+        "Latitude": 59.92,
+        "Longitude": -149.65,
+        "Rank": 48,
+        "Visitors": 356601,
+        "Percentage": 0.0039
+    },
+    "Kobuk Valley": {
+        "Park Code": "KOVA",
+        "State": "AK",
+        "Acres": 1750717,
+        "Latitude": 67.55,
+        "Longitude": -159.28,
+        "Rank": 62,
+        "Visitors": 15766,
+        "Percentage": 0.0002
+    },
+    "Lake Clark": {
+        "Park Code": "LACL",
+        "State": "AK",
+        "Acres": 2619733,
+        "Latitude": 60.97,
+        "Longitude": -153.42,
+        "Rank": 61,
+        "Visitors": 17157,
+        "Percentage": 0.0002
+    },
+    "Lassen Volcanic": {
+        "Park Code": "LAVO",
+        "State": "CA",
+        "Acres": 106372,
+        "Latitude": 40.49,
+        "Longitude": -121.51,
+        "Rank": 42,
+        "Visitors": 517039,
+        "Percentage": 0.0057
+    },
+    "Mammoth Cave": {
+        "Park Code": "MACA",
+        "State": "KY",
+        "Acres": 52830,
+        "Latitude": 37.18,
+        "Longitude": -86.1,
+        "Rank": 40,
+        "Visitors": 551590,
+        "Percentage": 0.0061
+    },
+    "Mesa Verde": {
+        "Park Code": "MEVE",
+        "State": "CO",
+        "Acres": 52122,
+        "Latitude": 37.18,
+        "Longitude": -108.49,
+        "Rank": 39,
+        "Visitors": 556203,
+        "Percentage": 0.0061
+    },
+    "Mount Rainier": {
+        "Park Code": "MORA",
+        "State": "WA",
+        "Acres": 235625,
+        "Latitude": 46.85,
+        "Longitude": -121.75,
+        "Rank": 18,
+        "Visitors": 1501621,
+        "Percentage": 0.0165
+    },
+    "North Cascades": {
+        "Park Code": "NOCA",
+        "State": "WA",
+        "Acres": 504781,
+        "Latitude": 48.7,
+        "Longitude": -121.2,
+        "Rank": 59,
+        "Visitors": 38208,
+        "Percentage": 0.0004
+    },
+    "Olympic": {
+        "Park Code": "OLYM",
+        "State": "WA",
+        "Acres": 922651,
+        "Latitude": 47.97,
+        "Longitude": -123.5,
+        "Rank": 9,
+        "Visitors": 3245806,
+        "Percentage": 0.0357
+    },
+    "Petrified Forest": {
+        "Park Code": "PEFO",
+        "State": "AZ",
+        "Acres": 93533,
+        "Latitude": 35.07,
+        "Longitude": -109.78,
+        "Rank": 34,
+        "Visitors": 643588,
+        "Percentage": 0.0071
+    },
+    "Pinnacles": {
+        "Park Code": "PINN",
+        "State": "CA",
+        "Acres": 26606,
+        "Latitude": 36.48,
+        "Longitude": -121.16,
+        "Rank": 51,
+        "Visitors": 177224,
+        "Percentage": 0.0019
+    },
+    "Redwood": {
+        "Park Code": "REDW",
+        "State": "CA",
+        "Acres": 112512,
+        "Latitude": 41.3,
+        "Longitude": -124.0,
+        "Rank": 43,
+        "Visitors": 504722,
+        "Percentage": 0.0055
+    },
+    "Rocky Mountain": {
+        "Park Code": "ROMO",
+        "State": "CO",
+        "Acres": 265828,
+        "Latitude": 40.4,
+        "Longitude": -105.58,
+        "Rank": 3,
+        "Visitors": 4670053,
+        "Percentage": 0.0513
+    },
+    "Saguaro": {
+        "Park Code": "SAGU",
+        "State": "AZ",
+        "Acres": 91440,
+        "Latitude": 32.25,
+        "Longitude": -110.5,
+        "Rank": 26,
+        "Visitors": 1020226,
+        "Percentage": 0.0112
+    },
+    "Shenandoah": {
+        "Park Code": "SHEN",
+        "State": "VA",
+        "Acres": 199045,
+        "Latitude": 38.53,
+        "Longitude": -78.35,
+        "Rank": 20,
+        "Visitors": 1425507,
+        "Percentage": 0.0157
+    },
+    "Theodore Roosevelt": {
+        "Park Code": "THRO",
+        "State": "ND",
+        "Acres": 70447,
+        "Latitude": 46.97,
+        "Longitude": -103.45,
+        "Rank": 32,
+        "Visitors": 691658,
+        "Percentage": 0.0076
+    },
+    "Voyageurs": {
+        "Park Code": "VOYA",
+        "State": "MN",
+        "Acres": 218200,
+        "Latitude": 48.5,
+        "Longitude": -92.88,
+        "Rank": 49,
+        "Visitors": 232974,
+        "Percentage": 0.0026
+    },
+    "Wind Cave": {
+        "Park Code": "WICA",
+        "State": "SD",
+        "Acres": 28295,
+        "Latitude": 43.57,
+        "Longitude": -103.48,
+        "Rank": 36,
+        "Visitors": 615350,
+        "Percentage": 0.0068
+    },
+    "Wrangell-St. Elias": {
+        "Park Code": "WRST",
+        "State": "AK",
+        "Acres": 8323148,
+        "Latitude": 61.0,
+        "Longitude": -142.0,
+        "Rank": 57,
+        "Visitors": 74518,
+        "Percentage": 0.0008
+    },
+    "Yellowstone": {
+        "Park Code": "YELL",
+        "State": "WY, MT, ID",
+        "Acres": 2219791,
+        "Latitude": 44.6,
+        "Longitude": -110.5,
+        "Rank": 6,
+        "Visitors": 4020288,
+        "Percentage": 0.0442
+    },
+    "Yosemite": {
+        "Park Code": "YOSE",
+        "State": "CA",
+        "Acres": 761266,
+        "Latitude": 37.83,
+        "Longitude": -119.5,
+        "Rank": 5,
+        "Visitors": 4422861,
+        "Percentage": 0.0486
+    },
+    "Zion": {
+        "Park Code": "ZION",
+        "State": "UT",
+        "Acres": 146598,
+        "Latitude": 37.3,
+        "Longitude": -113.05,
+        "Rank": 4,
+        "Visitors": 4488268,
+        "Percentage": 0.0493
+    }
+}
