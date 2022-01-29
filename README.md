@@ -9,13 +9,17 @@ Group Members:
 
 ## Final Project - Segment 1
 
+### Selected Topic
+
+Biodiversities in U.S. National Parks
+
 ## Presentation
 
 Presentation Google Slides:
 
 (https://docs.google.com/presentation/d/1OvQoqeVeVCoBJMrIVUxwvsc1T2G-Y4KHwDu30AmQtIk/edit?usp=sharing)
 
-## Biodiversities in National Park
+
 
 ### Reason for selected topic
 
