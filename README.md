@@ -110,4 +110,40 @@ SELECT * FROM cleanspecies
 
 ## Final Project - Segment 2
 
+### Presentation
+
+Our Google Slides (see above) contains:
+
+Selected topic
+
+- Reason why they selected their topic
+- Description of their source of data
+- Questions they hope to answer with
+the data
+- Description of the data exploration
+phase of the project
+- Description of the analysis phase of
+the project
+
+### Github
+
+Exploratory analysis codes in Main branch
+Machine Learning model codes in Main branch
+We utalized the same method od communication and updates to Github as presented in Segment 1
+
+### Machine Learning Model
+
+### Database
+ERD 
+
+### Dashboard
+
+Our dashboard slides:
+
+This slideshow contains:
+
+
+
+## Final Project - Segment 3
+
 
