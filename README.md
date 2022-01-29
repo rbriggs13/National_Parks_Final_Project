@@ -106,9 +106,6 @@ SELECT * FROM learningspecies
 
 SELECT * FROM cleanspecies
 
-## Dashboard
- - Javascript, html, and plotly will be used to make the final dashboard
- - Additional information will be provided when hovering over a data point in various graphs
 
 ## Final Project - Segment 2
 
@@ -140,9 +137,10 @@ ERD
 
 ### Dashboard
 
-Our dashboard slides:
+Our dashboard slides: https://docs.google.com/presentation/d/1HaS1kugqZTM1JURjWFIsn39IMSLgBZnD-xBZiUcNL0M/edit?usp=sharing
 
-This slideshow contains:
+ - Javascript, html, and plotly will be used to make the final dashboard
+ - Additional information will be provided when hovering over a data point in various graphs
 
 
 
