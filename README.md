@@ -1,22 +1,29 @@
 # National_Parks_Final_Project
 
+
+
 Group Members:
 ![Harry Mohabir]https://github.com/hmohabir)
 ![Lydia Ramirez ]https://github.com/LydiaRamirez1)
 ![Ryan Briggs]https://github.com/rbriggs13)
 
+## Final Project - Segment 1
+
 ## Presentation
+
+Presentation Google Slides:
 
 (https://docs.google.com/presentation/d/1OvQoqeVeVCoBJMrIVUxwvsc1T2G-Y4KHwDu30AmQtIk/edit?usp=sharing)
 
 ## Biodiversities in National Park
 
-
+### Reason for selected topic
 
 We selected this topic because we want to provide useful information to potential visitors what can be seen at a selected park, based on their interest. In addition, we want to highlight Nativeness and non-Nativeness of both flora and fauna at these parks.
  
 Our data was sourced from Kaggle and the National Parks government websites:
 
+### Data sources
 
 Species found in various parks
 
@@ -26,13 +33,18 @@ Species found in various parks
 
 ![Percentage visitors]https://irma.nps.gov/STATS/SSRSReports/National%20Reports/Annual%20Park%20Ranking%20Report%20(1979%20-%20Last%20Calendar%20Year)
 
-For our project, we hope to answer the following questions:
 
 
+### Questions we hope to answer
+
+
+- What makes a park popular?
+- Are certain species common among the populus parks?
 - Is there a relation between biodiversity and park visitors
 - What species tend to attract the most visitors?
 - Is there a relation between the size of parks and No. of visitors?
 - How native are these parks?
+
 
 ## GitHub
 
@@ -53,9 +65,9 @@ ReadMe - ongoning
 - Each member has a branch
 
 
-## Machine Learning Model
+###  Machine Learning Model
 
-We need to pull data directly, e.g. using SQL Alchemy
+We pulled our data from a PostgreSQL database for our machine learning model
 
 We chose the Random Forest Deep_Learning model.
 
@@ -71,7 +83,11 @@ Cons:
 - May be biased while dealing with categorical variables.
 - Can be slow to train.
 - It is not beleficial for linear methods with a lot of sparse features.
-----------------------------
+
+### Database
+
+Priliminary work done in PostgreSQL:
+
 CREATE TABLE nationalparks ( park_code VARCHAR(100), park_name VARCHAR(100), states VARCHAR(100), acres DECIMAL, latitude DECIMAL, longitude DECIMAL, ranks INT, visitors INT, percentage DECIMAL)
 
 CREATE TABLE learningspecies (genus VARCHAR(100), category VARCHAR(100), park_name VARCHAR(100), conservation_status VARCHAR(100), nativeness VARCHAR(100))
@@ -89,3 +105,7 @@ SELECT * FROM cleanspecies
 ## Dashboard
  - Javascript, html, and plotly will be used to make the final dashboard
  - Additional information will be provided when hovering over a data point in various graphs
+
+## Final Project - Segment 2
+
+
