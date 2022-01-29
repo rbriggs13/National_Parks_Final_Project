@@ -54,8 +54,6 @@ Species found in various parks
 
 ReadMe - ongoning
 
-### Description of communication Protocols
-
 - We will check in daily at around 7pm, except on days of classes via text messaging.
 
 - Text messaging for live communication
