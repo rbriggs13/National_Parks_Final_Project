@@ -135,6 +135,8 @@ We utalized the same method od communication and updates to Github as presented 
 ### Database
 ERD 
 
+https://github.com/rbriggs13/National_Parks_Final_Project/blob/main/QuickDBD-export.png
+
 Codes for the merge can be found in the file 
 
 
