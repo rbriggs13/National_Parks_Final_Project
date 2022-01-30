@@ -136,7 +136,7 @@ Tables were first cleaned in Jupyter Notebook, then merged in PostgreSQL.
 
 (https://github.com/rbriggs13/National_Parks_Final_Project/blob/National_Park_Final_Project_Harry/National_Parks_Machine_Learning_Model.ipynb)
 
-Using imported libraries, we created a connectio to PostgreSQL using psycopg2 library and a connection engine.
+Using imported libraries, we created a connection to PostgreSQL using psycopg2 library and a connection engine.
 We wanted to know about the nativeness of species in the national parks. Hence, we utalized OneHotEncoder to diffrentiate native and non-native species.
 Our training and testing was based on nativeness of species.
 We used Random Forest Classifier. (See 'Final Project Segment 1' above for reasons why we chose this model and its pros and cons).
@@ -167,5 +167,17 @@ Our dashboard slides: https://docs.google.com/presentation/d/1HaS1kugqZTM1JURjWF
 
 ## Final Project - Segment 3
 
+### Presentation
 
+Presentation slides are being updated
+
+### Github
+
+### Machine Learning Model
+
+### Database
+
+n/a
+
+### Dashboard
 
