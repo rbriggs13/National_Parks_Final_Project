@@ -153,7 +153,7 @@ ERD for our database
 
 Merging our tables
 
-![PostgewSQLMerge](https://github.com/rbriggs13/National_Parks_Final_Project/blob/main/PostGresSQLmerge.sql)
+![PostgreSQLMerge](https://github.com/rbriggs13/National_Parks_Final_Project/blob/main/PostGresSQLmerge.sql)
 
 
 ### Dashboard
