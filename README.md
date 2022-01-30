@@ -132,14 +132,28 @@ We utalized the same method od communication and updates to Github as presented 
 
 ### Machine Learning Model
 
+Tables were first cleaned in Jupyter Notebook, then merged in PostgreSQL. 
+
+(https://github.com/rbriggs13/National_Parks_Final_Project/blob/National_Park_Final_Project_Harry/National_Parks_Machine_Learning_Model.ipynb)
+
+Using imported libraries, we created a connectio to PostgreSQL using psycopg2 library and a connection engine.
+We wanted to know about the nativeness of species in the national parks. Hence, we utalized OneHotEncoder to diffrentiate native and non-native species.
+Our training and testing was based on nativeness of species.
+We used Random Forest Classifier. (See 'Final Project Segment 1' above for reasons why we chose this model and its pros and cons).
+We got a predictive accuracy of 91.6%. We felt that this was workable and built a Deep Neural Network.
+We fit and train our model and used 50 Epoch.
+We obtained a 28.1% loss and a accuracy of 91.2%.
+
+
 ### Database
 
 ERD for our database
 
 ![ERD](https://github.com/rbriggs13/National_Parks_Final_Project/blob/main/QuickDBD-export.png)
 
-Codes for the merge can be found in the file 
+Merging our tables
 
+![PostgewSQLMerge](https://github.com/rbriggs13/National_Parks_Final_Project/blob/main/PostGresSQLmerge.sql)
 
 
 ### Dashboard
