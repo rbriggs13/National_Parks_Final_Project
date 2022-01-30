@@ -135,6 +135,10 @@ We utalized the same method od communication and updates to Github as presented 
 ### Database
 ERD 
 
+Codes for the merge can be found in the file 
+
+
+
 ### Dashboard
 
 Our dashboard slides: https://docs.google.com/presentation/d/1HaS1kugqZTM1JURjWFIsn39IMSLgBZnD-xBZiUcNL0M/edit?usp=sharing
