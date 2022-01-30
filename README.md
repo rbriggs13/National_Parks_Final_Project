@@ -30,11 +30,12 @@ Is there a relation between the size of parks and visitors?
 
 ### Data sources
 
-
-### Description of our data source
+Description of our data source:
+We pulled species information fron kaggle. This gave us informatio that included species common name, scientific name, latitude/longitude, etc.
 
 ![Specie and park info]https://www.kaggle.com/nationalparkservice/park-biodiversity?select=species.csv)
 
+We also wanted information on parks' percentage visitors. We got this fron the U.S. National Parks Services.
 
 ![Percentage visitors]https://irma.nps.gov/STATS/SSRSReports/National%20Reports/Annual%20Park%20Ranking%20Report%20(1979%20-%20Last%20Calendar%20Year)
 
