@@ -32,6 +32,7 @@ function buildCharts() {
                 nonNativeCount = 0;
             });
             
+            //Array of visitor counts in order of parkNames
             var visitorsArray = [];
 
             Object.keys(parksData).forEach(key => {
@@ -132,55 +133,96 @@ function buildCharts() {
 
             //Plotly.newPlot('graph', barData, barLayout)
 
-            //Ryan's Graph 1
-            var barTrace = {
+            //Ryan's Graph 1 (Bird count and visitors per park)
+
+            var birdCounts = [];
+            var birds = 0;
+
+            //array of bird counts in the order of 
+            parkNames.forEach((park) => {
+                speciesData.forEach((species) => {
+                    if (species['Park Name'] === park) {
+                        if (species['Category'] === 'Bird') {
+                            birds += 1;
+                        }
+                    }
+                });
+                birdCounts.push(birds);
+
+                birds = 0;
+                
+            });
+
+            console.log(birdCounts);
+            visitorSize = [];
+
+            for (var i=0, length = visitorsArray.length; i < length; i++) {
+                visitorSize.push(birdCounts[i]/10);
+            }
+            
+
+            var birdTrace = {
+                type: 'scatter',
+                x: birdCounts,
+                y: visitorsArray,
+                mode: 'markers',
+                text: parkNames,
+                marker: {size: visitorSize}
+            };
+
+            var birdData = [birdTrace];
+
+            var birdLayout = {
+                autosize: false,
+                width: 750,
+                height: 750,
+                title: 'Birds'
+            };
+
+            //Plotly.newPlot('graph5', birdData, birdLayout)
+
+            // Ryan's Graph 2 (Native Species present in parks compared to visitors)
+            var nativeVisitorsTrace = {
                 type: 'bar',
-                x: nativeSpeciesCounts,
-                y: parkNames,
-                orientation: 'h'
+                x: parkNames,
+                y: nativeSpeciesCounts,
+                text: parkNames,
+                name: 'Native Species'
             };
 
-            var barData = [barTrace];
+            var nativeVisitorsData = [nativeVisitorsTrace];
 
-            var barLayout = {
-                autosize: true,
-                width: 500,
-                height: 1000,
-                margin: {
-                  l: 200,
-                  r: 100,
-                  b: 100,
-                  t: 100,
-                  pad: 4
-                }
-            };
+            var nativeVisitorsLayout = {
+                autosize: false,
+                width: 750,
+                height: 750,
+                title: 'Species Nativeness vs. Visitor count',
+                xaxis: {title: 'Number of Species'},
+                yaxis: {title: 'Number of Visitors'}
+            }
 
-            //Plotly.newPlot('graph', barData, barLayout)
+            Plotly.newPlot('graph5', nativeVisitorsData, nativeVisitorsLayout)
 
-            // Ryan's Graph 2
-            var barTrace = {
+            var nativeVisitorsTrace2 = {
                 type: 'bar',
-                x: nativeSpeciesCounts,
-                y: parkNames,
-                orientation: 'h'
+                x: parkNames,
+                y: visitorsArray,
+                text: parkNames,
+                name: 'Native Species'
             };
 
-            var barData = [barTrace];
+            var nativeVisitorsData2 = [nativeVisitorsTrace2];
 
-            var barLayout = {
-                autosize: true,
-                width: 500,
-                height: 1000,
-                margin: {
-                  l: 200,
-                  r: 100,
-                  b: 100,
-                  t: 100,
-                  pad: 4
-                }
-            };
+            var nativeVisitorsLayout2 = {
+                autosize: false,
+                width: 750,
+                height: 750,
+                title: 'Species Nativeness vs. Visitor count',
+                xaxis: {title: 'Number of Species'},
+                yaxis: {title: 'Number of Visitors'}
+            }
 
-            //Plotly.newPlot('graph', barData, barLayout)
+            Plotly.newPlot('graph6', nativeVisitorsData2, nativeVisitorsLayout2)
         });
     });
 }
