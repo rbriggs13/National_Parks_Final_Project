@@ -74,6 +74,23 @@ ReadMe - ongoning
 
 We pulled our data from a PostgreSQL database for our machine learning model
 
+### Data cleaning
+
+We cleaned our data to reflect what we wanted to portray - Nativeness and non-nativeness of species in these parks.
+
+Our codes for Data cleaning. See the relavant Jupyter Notebook file below for actual cleaning steps.
+
+Cleaning of the Parks.csv:
+
+https://github.com/rbriggs13/National_Parks_Final_Project/blob/main/parks_cleaning.ipynb
+
+Cleaning of species.csv:
+
+https://github.com/rbriggs13/National_Parks_Final_Project/blob/main/species_cleaning.ipynb
+
+
+After our data was cleaned, we imported our data into PostgreSQL We connected our Jupyter notebook file to the PostgreSQL database before we continued our Machine Learning model.
+
 We chose the Random Forest Deep_Learning model.
 
 Pros:
