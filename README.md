@@ -72,9 +72,7 @@ ReadMe - ongoning
 
 ###  Machine Learning Model
 
-We pulled our data from a PostgreSQL database for our machine learning model
-
-### Data cleaning
+For Machine Learning, we wanted to show the nativeness of species in parks.
 
 We cleaned our data to reflect what we wanted to portray - Nativeness and non-nativeness of species in these parks.
 
