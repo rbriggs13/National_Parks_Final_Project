@@ -185,15 +185,24 @@ Our dashboard slides: https://docs.google.com/presentation/d/1HaS1kugqZTM1JURjWF
 
 ### Presentation
 
-Presentation slides are being updated
+Presentation slides are being updated. Resulta of Machine Learning and results are added to the slides.
 
 ### Github
 
+Updates in Github are made and are built upon from previous segments.
+
 ### Machine Learning Model
+
+The model is finalized and the relevant descryption are added to the jypyter notebook file. This was built upon from previous segments.
 
 ### Database
 
 n/a
 
 ### Dashboard
+
+The link to the dashboard is:
+It contains interactive information of what we wanted to visualise. This was built upon from previous segments.
+
+## Final Project - Segment 4
 
