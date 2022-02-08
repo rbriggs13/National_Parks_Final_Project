@@ -93,32 +93,10 @@ function buildCharts() {
             };
 
             // Use Plotly to plot the data with the layout.
-            Plotly.newPlot('graph5', bubbleData, bubbleLayout); 
+            Plotly.newPlot('graph1', bubbleData, bubbleLayout); 
 
-            //Harry's Graph 2
-            var barTrace2 = {
-                type: 'bar',
-                x: nonNativeSpeciesCounts,
-                y: parkNames,
-                orientation: 'h'
-            };
 
-            var barData2 = [barTrace2];
-
-            var barLayout2 = {
-                autosize: true,
-                width: 500,
-                height: 1000,
-                margin: {
-                  l: 200,
-                  r: 100,
-                  b: 100,
-                  t: 100,
-                  pad: 4
-                }
-            };
-            //Plotly.newPlot('graph', barData2, barLayout2)
-
+            //Lydia's Graph
             var pieTrace = {
                 labels: ["Algae", "Amphibian", "Bird", "Crab/Lobster/Shrimp",
                 "Fish", "Fungi", "Insect", "Invertebrate", "Mammal", "Nonvascular Plant",
@@ -136,32 +114,7 @@ function buildCharts() {
                    title: "Visitors Attracted Per Category"
                };
 
-               Plotly.newPlot("graph4", pieData, pieLayout);
-
-            //Lydia's Graph 2
-            var barTrace = {
-                type: 'bar',
-                x: nativeSpeciesCounts,
-                y: parkNames,
-                orientation: 'h'
-            };
-
-            var barData = [barTrace];
-
-            var barLayout = {
-                autosize: true,
-                width: 500,
-                height: 1000,
-                margin: {
-                  l: 200,
-                  r: 100,
-                  b: 100,
-                  t: 100,
-                  pad: 4
-                }
-            };
-
-            //Plotly.newPlot('graph', barData, barLayout)
+               Plotly.newPlot("graph2", pieData, pieLayout);
 
             // Ryan's Graph 1 (Native Species present in parks compared to visitors)
             //Array of parks ranked by visitor count in order of highest to lowest
@@ -217,7 +170,7 @@ function buildCharts() {
             var text = [];
 
             for (let i=0; i < rankNames.length; i++) {
-                text.push(`${rankNames[i]} National Park, Number of Visitors: ${visitorsRank[i]}`)
+                text.push(`<b>${rankNames[i]} National Park</b><br></br>Number of Visitors: ${visitorsRank[i]}`)
             }
 
             var nativeVisitorsTrace = {
@@ -227,8 +180,9 @@ function buildCharts() {
                 text: text,
                 name: 'Native Species',
                 hovertemplate: 
-                    "<b>%{text}</b><br><br>" +
-                    "%{yaxis.title.text}: %{y:,}<br>"
+                    "%{text}<br>" +
+                    "%{yaxis.title.text}: %{y:,}<br>",
+                marker: {color: 'forestgreen'}
             };
             
 
@@ -239,12 +193,12 @@ function buildCharts() {
                 width: 1000,
                 height: 750,
                 title: 'Native Species vs. Parks ranked by Popularity',
-                xaxis: {title: 'Park (in descending order of visitors)'},
+                xaxis: {title: 'Park (in ascending order of visitors)'},
                 yaxis: {title: 'Number of Native Species'},
                 showticklabels: true
             }
 
-            Plotly.newPlot('graph5', nativeVisitorsData, nativeVisitorsLayout)
+            Plotly.newPlot('graph3', nativeVisitorsData, nativeVisitorsLayout)
 
             //Ryan's Graph 2 (Bird count and visitors per park)
 
@@ -271,7 +225,11 @@ function buildCharts() {
                 type: 'bar',
                 x: codeArray,
                 y: birdCounts,
-                text: rankNames
+                text: text,
+                hovertemplate: 
+                    "%{text}<br>" +
+                    "%{yaxis.title.text}: %{y:,}",
+                marker: {color: 'goldenrod'}
             };
 
             var birdData = [birdTrace];
@@ -280,10 +238,12 @@ function buildCharts() {
                 autosize: false,
                 width: 1000,
                 height: 750,
-                title: 'Birds'
+                title: 'Bird Species by Park ranked by Popularity',
+                xaxis: {title: 'Parks (in ascending order of visitors)'},
+                yaxis: {title: 'Number of Bird Species'}
             };
 
-            //Plotly.newPlot('graph6', birdData, birdLayout)
+            Plotly.newPlot('graph4', birdData, birdLayout)
 
             //Graph Exploring the species count and the acreage of the park
             var acreSpeciesTrace = {
@@ -292,7 +252,8 @@ function buildCharts() {
                 y: acreArray,
                 mode: 'markers',
                 text: parkNames,
-                marker: {size: 10}
+                marker: {size: 10},
+                hovertemplate: '<b>%{text} National Park</b><br></br>' + 'Acres: %{y}<br>' + 'Total Species: %{x}'
             };
 
             var acreSpeciesData = [acreSpeciesTrace];
@@ -301,10 +262,16 @@ function buildCharts() {
                 autosize: false,
                 width: 1000,
                 height: 750,
-                title: 'Species Count vs. Acreage'
+                title: 'Species Count vs. Size of the Park',
+                xaxis: {
+                    title: 'Species Count'
+                },
+                yaxis: {
+                    title: 'Size of Park (Acres)'
+                }
             };
 
-            Plotly.newPlot('graph6', acreSpeciesData, acreSpeciesLayout)
+            Plotly.newPlot('graph5', acreSpeciesData, acreSpeciesLayout)
         });
     });
 }
@@ -316,211 +283,163 @@ function buildCharts2() {
             console.log(speciesData);
 
             //building a graph that displays the category an endangered species belongs too and it's endangered status
-            var categories = ['Bird', 'Insect', 'Slug/Snail', 'Amphibian', 'Invertabrate', 'Reptile', 'Vascular Plant', 'Fish', 'Mammal'];
-            var speciesIdsEnd = [];
-            var speciesIdsThr = [];
-            var conStatusEnd = [];
+            var categories = ['Bird', 'Insect', 'Slug/Snail', 'Amphibian', 'Reptile', 'Vascular Plant', 'Fish', 'Mammal'];
+            var speciesIdsEnd = 0;
+            var speciesIdsThr = 0;
+            var speciesIdsRec = 0;
             var categoryCountsEnd = [];
             var categoryCountsThr = [];
-            var conCountEnd = [];
+            var categoryCountsRec = [];
+            
 
             categories.forEach((category) => {
                 speciesData.forEach((species) => {
-                    if (species['Nativeness'] === 'Native') {
-                        if (species['Conservation Status'] != 'Least Concern') {
-                                
-                                
-                            if (species['Conservation Status'] === 'Threatened') {
-                                //conStatus.push('rgb(23, 190, 207)');
-                                speciesIdsThr.push(species['Species ID']);
-                            }
-                            else if (species['Conservation Status'] === 'In Recovery'){
-                                    //conStatus.push('rgb(44, 160, 44)');
-                            }
-                            else if (species['Conservation Status'] === 'Species of Concern') {
-
-                            }
-                            else {
-                                    conStatusEnd.push('rgb(214, 39, 40)');
-                                    speciesIdsEnd.push(species['Species ID']);
-                            }
-                            
+                    if (species['Category'] === category) {
+                        if (species['Conservation Status'] === 'Endangered') {
+                            speciesIdsEnd += 1;
+                        }
+                        else if (species['Conservation Status'] === 'Threatened') {
+                            speciesIdsThr += 1;
+                        }
+                        else if (species['Conservation Status'] === 'In Recovery') {
+                            speciesIdsRec += 1;
                         }
                     }
                 });
-                categoryCountsEnd.push(speciesIdsEnd.length);
-                categoryCountsThr.push(speciesIdsThr.length);
+                categoryCountsEnd.push(speciesIdsEnd);
+                categoryCountsThr.push(speciesIdsThr);
+                categoryCountsRec.push(speciesIdsRec);
+                speciesIdsEnd = 0;
+                speciesIdsThr = 0;
+                speciesIdsRec = 0;
             });
 
-            
 
             //Build the Graph
             var conTrace = {
                 type: 'bar',
                 x: categories,
                 y: categoryCountsEnd,
-                mode: 'markers',
+                marker: {
+                    color: 'red'
+                },
+                name: "Endangered Species",
+                hovertemplate: '<b>Number of Species</b>: %{y}'
             };
 
             var conTrace2 = {
                 type: 'bar',
                 x: categories,
                 y: categoryCountsThr,
-                mode: 'markers',
+                marker: {
+                    color: 'yellow'
+                },
+                name: 'Threatened Species',
+                hovertemplate: '<b>Number of Species</b>: %{y}'
             };
 
-            var conData = [conTrace, conTrace2];
+            var conTrace3 = {
+                type: 'bar',
+                x: categories,
+                y: categoryCountsRec,
+                marker: {
+                    color: 'green'
+                },
+                name: 'Species in Recovery',
+                hovertemplate: '<b>Number of Species</b>: %{y}'
+            };
+
+
+            var conData = [conTrace, conTrace2, conTrace3];
 
             var conLayout = {
-                title: 'Individual'
+                title: 'Endangered Species Count per Category',
+                xaxis: {
+                    title: 'Species Category'
+                },
+                yaxis: {
+                    title: 'Species Count'
+                }
             }
 
-            Plotly.newPlot('endangeredGraph', conData, conLayout)
+            Plotly.newPlot('graph6', conData, conLayout)
 
             //pie charts showing the distribution of categories across both native and non native species
             var nativeCategoryCounts = [];
             var nonCategoryCounts = [];
 
             //Native category counts
-            var birds = 0;
-            var insects = 0;
-            var slug = 0;
-            var amphibians = 0;
-            var invertebrates = 0;
-            var reptiles = 0;
-            var plants = 0;
-            var fish = 0;
-            var mammals = 0;
-            
+            var nativeCount = 0;
 
-            speciesData.forEach((species) => {
-                if (species['Nativeness'] === 'Native') {
-                    if (species['Category'] === 'Bird') {
-                        birds += 1;
+            categories.forEach((category) => {
+                speciesData.forEach((species) => {
+                    if (species['Category'] === category) {
+                        if (species['Nativeness'] === 'Native') {
+                            nativeCount += 1;
+                        }
                     }
-                    else if (species['Category'] === 'Insect') {
-                        insects += 1;
-                    }
-                    else if (species['Category'] === 'Amphibian') {
-                        amphibians += 1;
-                    }
-                    else if (species['Category'] === 'Invertabrate') {
-                        invertebrates += 1;
-                    }
-                    else if (species['Category'] === 'Reptile') {
-                        reptiles += 1;
-                    }
-                    else if (species['Category'] === 'Vascular Plant') {
-                        plants += 1;
-                    }
-                    else if (species['Category'] === 'Fish') {
-                        fish += 1;
-                    }
-                    else if (species['Category'] === 'Mammal') {
-                        mammals += 1;
-                    }
-                    else {
-                        slug += 1;
-                    }
-                    
-                };
+                });
+                nativeCategoryCounts.push(nativeCount);
+                nativeCount = 0;
             });
-            nativeCategoryCounts.push(birds);
-            nativeCategoryCounts.push(insects);
-            nativeCategoryCounts.push(amphibians);
-            nativeCategoryCounts.push(invertebrates);
-            nativeCategoryCounts.push(reptiles);
-            nativeCategoryCounts.push(plants);
-            nativeCategoryCounts.push(fish);
-            nativeCategoryCounts.push(mammals);
-            nativeCategoryCounts.push(slug);
+            
             
             //Non native category counts
-            var birds = 0;
-            var insects = 0;
-            var slug = 0;
-            var amphibians = 0;
-            var invertebrates = 0;
-            var reptiles = 0;
-            var plants = 0;
-            var fish = 0;
-            var mammals = 0;
+            var nonNativeCount = 0;
 
-            speciesData.forEach((species) => {
-                if (species['Nativeness'] === 'Not Native') {
-                    if (species['Category'] === 'Bird') {
-                        birds += 1;
+            categories.forEach((category) => {
+                speciesData.forEach((species) => {
+                    if (species['Category'] === category) {
+                        if (species['Nativeness'] === 'Not Native') {
+                            nonNativeCount += 1;
+                        }
                     }
-                    else if (species['Category'] === 'Insect') {
-                        insects += 1;
-                    }
-                    else if (species['Category'] === 'Amphibian') {
-                        amphibians += 1;
-                    }
-                    else if (species['Category'] === 'Invertabrate') {
-                        invertebrates += 1;
-                    }
-                    else if (species['Category'] === 'Reptile') {
-                        reptiles += 1;
-                    }
-                    else if (species['Category'] === 'Vascular Plant') {
-                        plants += 1;
-                    }
-                    else if (species['Category'] === 'Fish') {
-                        fish += 1;
-                    }
-                    else if (species['Category'] === 'Mammal') {
-                        mammals += 1;
-                    }
-                    else {
-                        slug += 1;
-                    }
-                    
-                };
+                });
+                nonCategoryCounts.push(nonNativeCount);
+                nonNativeCount = 0;
             });
-            nonCategoryCounts.push(birds);
-            nonCategoryCounts.push(insects);
-            nonCategoryCounts.push(amphibians);
-            nonCategoryCounts.push(invertebrates);
-            nonCategoryCounts.push(reptiles);
-            nonCategoryCounts.push(plants);
-            nonCategoryCounts.push(fish);
-            nonCategoryCounts.push(mammals);
-            nonCategoryCounts.push(slug);
+            
+            colors = ['skyblue','beige', 'navajowhite', 'goldenrod', 'lavender', 'forestgreen', 'royalblue', 'crimson']
 
             //Build the native graph
             var nativePieTrace = {
                 type: 'pie',
                 values: nativeCategoryCounts,
-                labels: ['Birds', 'Insects', 'Amphibians', 'Invertebrates', 'Reptiles', 'Plants', 'Fish', 'Mammals', 'Slugs/Snails'],
+                labels: categories,
+                marker: {
+                    colors: colors
+                },
+                hoverinfo: 'label+value'
             };
 
             var nativePieData = [nativePieTrace];
 
             var nativePieLayout = {
-                autosize: false,
-                width: 500,
-                height: 1000
+                autosize: true,
+                title: 'Native Species by Category'
             };
 
-            Plotly.newPlot('pie1', nativePieData, nativePieLayout)
+            Plotly.newPlot('graph7', nativePieData, nativePieLayout)
 
             //Build the non native graph
             var nonNativePieTrace = {
                 type: 'pie',
                 values: nonCategoryCounts,
-                labels: ['Birds', 'Insects', 'Amphibians', 'Invertebrates', 'Reptiles', 'Plants', 'Fish', 'Mammals', 'Slugs/Snails'],
+                labels: categories,
+                marker: {
+                    colors: colors
+                },
+                hoverinfo: 'label+value'
             };
 
             var nonNativePieData = [nonNativePieTrace];
 
             var nonNativePieLayout = {
-                autosize: false,
-                width: 500,
-                height: 1000
+                autosize: true,
+                title: 'Non Native Species by Category'
             };
 
-            Plotly.newPlot('pie2', nonNativePieData, nonNativePieLayout)
+            Plotly.newPlot('graph8', nonNativePieData, nonNativePieLayout)
         });
     });
 }
