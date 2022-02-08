@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="Resources/assets/css/styles.css" rel="stylesheet" />
+</head>
+<body style="background-color: darkseagreen">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../analysis.html">The Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="model.html">Machine Learning Model</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Jumbotron-->
+    <div class='container'>
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center" style='background-color: sienna'>
+              <h1 style='font-family:Georgia; color:black'>National Parks Biodiversity Data Table</h1>
+            </div>
+          </div>
+    </div>
+    <!--Park Selection Menu and the Info Panel-->
+    <div class = 'container'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div class='well'>
+                    <h5 style='font-family:Georgia;'>Select your National Park</h5>
+                    <select id='selDataset' onchange="optionChanged(this.value)"></select>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h3 class="panel-title" style='font-family:Georgia;'>Park Info</h3>
+                    </div>
+                    <div id="sample-data" class="panel-body"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = 'container'>
+        <div class='row'>
+            <div class='col-md-3'>
+               <form>
+                   <p>Filter Search</p>
+                   <ul class='list-group'>
+                       <li class='list-group-item'>
+                           <div id = 'categoryFilter' class='well'>
+                               <h5 style='font-family:Georgia;'>Category</h5>
+                               <select id='selCategory' onchange="filterChanged(this)"></select>
+                           </div>
+                       </li>
+                       <li class='list-group-item'>
+                           <label for='name'>Common Name</label>
+                           <input type='text' placeholder='Sasquatch' id='name' onchange="filterChanged(this)" />
+                       </li>
+                   </ul>
+               </form> 
+            </div>
+            <div class='col-md-9'>
+                <table id='tableData' class='table table-striped'>
+                    <thead>
+                        <tr>
+                            <th>Common Name</th>
+                            <th>Scientific Name</th>
+                            <th>Category</th>
+                            <th>Nativeness</th>
+                            <th>Conservation Status</th>
+                            <th>Park Name</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!--D3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
