@@ -1,8 +1,8 @@
 function buildCharts() {
-    d3.json('../Resources/data/parks_data.json').then((parksData) => {
-        d3.json('../Resources/data/species_data.json').then((speciesData) => {
+    d3.json('Resources/data/parks_data.json').then((parksData) => {
+        d3.json('Resources/data/species_data.json').then((speciesData) => {
 
-            
+            console.log('Hello')
             //List of park names
             var parkNames = Object.keys(parksData);
 
@@ -581,8 +581,8 @@ function buildCharts() {
 }
 
 function buildCharts2() {
-    d3.json('../Resources/data/parks_data.json').then((parksData) => {
-        d3.json('../Resources/data/species_data.json').then((speciesData) => {
+    d3.json('Resources/data/parks_data.json').then((parksData) => {
+        d3.json('Resources/data/species_data.json').then((speciesData) => {
             console.log(parksData);
             console.log(speciesData);
 
