@@ -201,7 +201,10 @@ n/a
 
 ### Dashboard
 
-The link to the dashboard is:
+The link to the Biodiversity is: https://rbriggs13.github.io/National_Parks_Final_Project/
+Data about individual park: https://rbriggs13.github.io/National_Parks_Final_Project/Resources/explore.html
+Machine Learning information: https://rbriggs13.github.io/National_Parks_Final_Project/Resources/model.html
+
 It contains interactive information of what we wanted to visualise. This was built upon from previous segments.
 
 ## Final Project - Segment 4
