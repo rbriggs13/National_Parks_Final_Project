@@ -209,3 +209,7 @@ It contains interactive information of what we wanted to visualise. This was bui
 
 ## Final Project - Segment 4
 
+We have completed all of our previous segments and have our final data.
+
+Presentation Google Slides: https://docs.google.com/presentation/d/1OvQoqeVeVCoBJMrIVUxwvsc1T2G-Y4KHwDu30AmQtIk/edit?usp=sharing
+
